@@ -21,7 +21,7 @@ class StockTradingEnv(gym.Env):
 
         self.df = df  # Stock Environment expects a dataframe as input
         self.reward_range = (
-        0, maxAccountBalance)  # Defining the reward range, 0 to our theoretical max gains from stocks
+        0, maxAccountBalance)  # Defining the reward range, 0 to our theoretical max gains from stocks -NOTE THIS IS NOT NECESSARY but always good if we can hit the upper bound ;)
 
         # Actions which could be too: Buy x (%), Sell x (%) or Hold (Do nothing)
         self.action_space = spaces.Box(
