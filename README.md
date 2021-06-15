@@ -31,5 +31,10 @@ Reset class method is used to reset the environment - back to the original setti
 Render the environment to the screen with the render class method. 
 
 3. Main.py
-Proximal Policy Optimization Agent (Model) taking 
+You need to specify the ticker name you downloaded in the ticker variable.
+Proximal Policy Optimization Agent (Model) takes in a Policy, our custom environment and a verbose setting. 
+The agent then has a total number of timesteps to learn from.
+we reset the environment.
+We lastly specify the iterations to execute, and based on an observation action and states are returned
+Finally, after taking in an action we can calculare the reward (which we attempt to maximize our cumulative balance over each timestep). 
 
