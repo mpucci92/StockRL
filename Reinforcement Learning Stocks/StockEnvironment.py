@@ -66,8 +66,7 @@ class StockTradingEnv(gym.Env):
             additional_cost = shares_bought * current_price
 
             self.balance = self.balance - additional_cost
-            self.cost_basis = (
-                                      prev_cost + additional_cost) / (self.shares_held + shares_bought)
+            self.cost_basis = (prev_cost + additional_cost) / (self.shares_held + shares_bought)
             self.shares_held = self.shares_held + shares_bought
 
         elif action_type < 2:
@@ -78,7 +77,7 @@ class StockTradingEnv(gym.Env):
             self.total_shares_sold += shares_sold
             self.total_sales_value += shares_sold * current_price
 
-        self.net_worth = self.balance + self.shares_held * current_price
+        self.net_worth = self.balance + (self.shares_held * current_price)
 
         if self.net_worth > self.max_net_worth:
             self.max_net_worth = self.net_worth
@@ -121,7 +120,7 @@ class StockTradingEnv(gym.Env):
         return self.next_observation()
 
     def render(self, mode='human', close=False):
-        # Render the environment to the screen #
+        # Render the environment to the screen - where we currently are at rendered to the screen #
         profit = self.net_worth - accountBalance
         print(f'Step: {self.current_step}')
         print(f'Profit: {profit}')
