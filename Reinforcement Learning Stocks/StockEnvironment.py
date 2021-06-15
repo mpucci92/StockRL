@@ -94,8 +94,6 @@ class StockTradingEnv(gym.Env):
         if self.current_step > len(self.df.loc[:, 'Open'].values) - 6:
             self.current_step = 0  # Done the timeseries, reset the current step to 0 in this case.
 
-        # timeBenefit = (self.current_step / maxRLSteps)   # Give
-
         reward = self.balance  # *  timeBenefit
         done = self.net_worth <= 0
 
