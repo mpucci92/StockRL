@@ -7,7 +7,7 @@ Instructions on how to use StockRL Agent
 This script is used to obtain the stock data that the RL agent will use to train on.
 The input parameters will be the ticker, the start date and the end date and it will
 return a CSV file of the ticker data from the start date till the end date. The CSV will
-be saved in the local directory "DATA" folder. 
+be saved in the local directory "Data" folder. 
 
 
 2. StockEnvironment.py 
