@@ -28,7 +28,7 @@ class StockTradingEnv(gym.Env):
             low=np.array([0, 0]), high=np.array([3, 1]),
             dtype=np.float16)  # Declaring the action_space and observation_space  - Customized declarations
 
-        # Prices contains the OHLC values for the last five prices
+        # Prices contains the Open, low, high, close and volume values for the last five prices
         self.observation_space = spaces.Box(
             low=0, high=1, shape=(5, 6), dtype=np.float16)
 
