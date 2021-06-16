@@ -28,13 +28,13 @@ The _take_action class method is used to define the actions of buying, selling o
 
 Step class method is used to execute one time step within the environment.
 Reset class method is used to reset the environment - back to the original settings - original cash postion and no shares held yet.
-Render the environment to the screen with the render class method. 
+LAstly, the Render class method will Render the environment to the screen.
 
 3. Main.py
 You need to specify the ticker name you downloaded in the ticker variable.
 Proximal Policy Optimization Agent (Model) takes in a Policy, our custom environment and a verbose setting. 
 The agent then has a total number of timesteps to learn from.
 we reset the environment.
-We lastly specify the iterations to execute, and based on an observation action and states are returned.
+We lastly specify the iterations to execute, and based on an observation, action and states are returned.
 Finally, after taking in an action, we can calculate the reward (which we attempt to maximize our cumulative balance over each timestep). 
 
