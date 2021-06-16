@@ -18,7 +18,7 @@ Agent will do per training.
 
 The limits for the reward is defined as well via the reward range: Defining the reward range, 0 to our theoretical max gains from stocks.
 The actions sapce is defined as the following actions: Buy x (%), Sell x (%) or Hold (Do nothing).
-The observation space is defined as the following: Prices contains the OHLC values for the last five prices. Note: The amount of days can be changed, but the shape
+The observation space is defined as the following: Prices contains the OHLCV values for the last five prices. Note: The amount of days can be changed, but the shape
 in the observation space has to reflect accordingly. 
 
 The next_observation class method is used to get the stock data points for the last 5 days and scale them between 0-1 - Normalizing the values
