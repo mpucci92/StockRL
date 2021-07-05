@@ -38,4 +38,4 @@ we reset the environment.
 We lastly specify the iterations to execute, and based on an observation, action and states are returned.
 Finally, after taking in an action, we can calculate the reward (which we attempt to maximize our cumulative balance over each timestep). 
 
-4. `DQN.py`: 
+4. `DQN.py`: This file is used to outline the DQN Class used to create a DQN Object to be used to train a DQN Agent on Open High Low Close stock data
