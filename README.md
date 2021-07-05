@@ -3,14 +3,14 @@ Assignment for Reinforcement Learning - McGill University
 
 Instructions on how to use StockRL Agent
 
-1. GetData.py
+1. `GetData.py`
 This script is used to obtain the stock data that the RL agent will use to train on.
 The input parameters will be the ticker, the start date and the end date and it will
 return a CSV file of the ticker data from the start date till the end date. The CSV will
 be saved in the local directory "Data" folder. 
 
 
-2. StockEnvironment.py 
+2. `StockEnvironment.py` 
 This script you have the option to specify the initial account balance that the agent
 will use as a starting grounds. You can also specify the maximum number of shares, the 
 maximum share price, the maximum simultaneous open positions, the maximum steps that the RL
@@ -30,7 +30,7 @@ Step class method is used to execute one time step within the environment.
 Reset class method is used to reset the environment - back to the original settings - original cash postion and no shares held yet.
 LAstly, the Render class method will Render the environment to the screen.
 
-3. Main.py
+3. `Main.py`
 You need to specify the ticker name you downloaded in the ticker variable.
 Proximal Policy Optimization Agent (Model) takes in a Policy, our custom environment and a verbose setting. 
 The agent then has a total number of timesteps to learn from.
@@ -38,3 +38,4 @@ we reset the environment.
 We lastly specify the iterations to execute, and based on an observation, action and states are returned.
 Finally, after taking in an action, we can calculate the reward (which we attempt to maximize our cumulative balance over each timestep). 
 
+4. `DQN.py`: 
